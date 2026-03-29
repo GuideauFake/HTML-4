@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um repositório digital de conhecimento">
+    <meta name="keywords" content="arquivo,digital">
+    <meta name="author" content="Irinel">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+     <link rel="stylesheet" href="css/estilo.css">
+
+    <title> Arquivo Digital </title>
+</head>
+
+<body>
+    
+    <!--h é nivel de titulo-->
+    
+    <h1 id="principal"> Arquivo Digital</h1>
+    
+    <h2 class="centro"><abbr title="ou quase" style="text-decoration: none;">Todo</abbr> conhecimento reside aqui</h2>
+    <!--p é paragrafo--> 
+    <p style="text-indent: 40px;">Bem-vindo ao nosso <b>repositório</b> digital de conhecimento. <q>Aqui você encontrará uma coleção de informações</q>  e recursos para explorar. </p>
+    
+     <!--hr são "linhas divisorias"-->
+      <hr>
+     <hr>
+<h2>navegação</h2>
+<nav>
+    <!-- link absoluto ou url absoluta-->
+    <a href="https://www.google.com.br" target="_blank" rel="external">google</a>
+    <br><br>
+    
+    <!-- link relativo -->
+    <a href="sobre.html" rel="next">Sobre nós</a>
+    <br><br>
+    <a href="video.html"> video</a>
+    <!--br são quebras de linhas-->
+    <br>
+    <br>
+    <a href="https://www.youtube.com" target="_blank" rel="nofollow"> youtube</a>
+    <br>
+    <br>
+    <a href="pagina2.html">pagina 2</a>
+    <br><br>
+    <a href="equipe/equipe.html"> equipe</a>
+    <br><br>
+    
+    <a href="termo de uso.html"> termo de uso</a>
+    <br><br>
+    <a href="fontes.html"> fontes</a>
+    <hr>
+</nav>
+
+<h2>imagem com link</h2> 
+ <!--link na imagem-->
+ <a href="sobre.html"> 
+    <img src="img/fedelho.png" width="100%">
+</a>
+
+<!--semantica-->
+
+<h2>algumas tags</h2>
+<p>
+    <b>negrito</b>
+    <br>
+    <strong>destaque</strong>
+    <br>
+    <i>italico</i>
+    <br>
+    <em>enfase</em>
+    <br>
+    <u>sublinhado</u>
+    <br>
+    <mark>marcado</mark>
+    <br>
+    <small>pequeno</small>
+    <br>
+    <del>riscar</del>
+    <br>
+    <ins>inserido</ins>
+    <br>
+    <sub>subscrito</sub>
+    <br>
+    <sup>sobrescrito</sup>
+    <br>
+    <code>codigo ola mundo
+    </code>
+    <br>
+    <kbd>teclado</kbd>
+    <br>
+    <var>variavel</var>
+    <br>
+    <time datetime="2024-08-15">15 de agosto de 2024</time>
+    <br>
+    <address>
+        Contato:<br>
+        Rua Exemplo, 123<br>
+        Cidade, País<br>
+        Email
+    </address>
+    <br>
+    <pre>
+        Texto pré-formatado
+        Mantém espaços e quebras de linha
+    </pre>
+</p>
+<br>
+<p>    
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, <q>temporibus veniam. Numquam, natus? Cupiditate sint aliquam, </q>earum reprehenderit non natus sequi architecto mollitia molestias commodi? Totam reiciendis modi ad laboriosam.
+</p>
+<br>
+<blockquote cite="https://www.exemplo.com">
+    Este é um exemplo de citação em bloco. Pode ser usado para destacar citações longas ou trechos importantes de texto.       
+</blockquote>
+<h2>listas ordenadas ol</h2>
+<ol type="1">
+    
+        <li>acordar</li>
+        <li>tomar cafe</li>
+        <li>roupa</li>
+        <li>escovar os dentes</li>
+
+</ol>
+<ol type="A">
+    
+        <li>acordar</li>
+        <li>tomar cafe</li>
+        <li>roupa</li>
+        <li>escovar os dentes</li>
+<h2>listas desordenadas ul </h2>
+<ul type="square">
+  
+    <li>acordar</li>
+    <li>tomar cafe</li>
+    <li>roupa</li>
+    <li>escovar os dentes</li>
+
+</ul>
+<br>
+<ul type="circle">
+  
+    <li>acordar</li>
+    <li>tomar cafe</li>
+    <li>roupa</li>
+    <li>escovar os dentes</li>
+</ul>
+<br>
+<ul type="disc">
+  
+    <li>acordar</li>
+    <li>tomar cafe</li>
+    <li>roupa</li>
+    <li>escovar os dentes</li>
+</ul>
+<br>
+<ul type="none">
+  
+    <li>acordar</li>
+    <li>tomar cafe</li>
+    <li>roupa</li>
+    <li>escovar os dentes</li> 
+</ul>
+
+<h2>definição</h2>
+
+<dt>sla</dt>
+<dd>tambem não sei</dd>
+<br>
+
+<!--donwload de arquivos dentro do site-->
+
+<h2>download de arquivos</h2>
+<button><a href="img/fedelho.png" download="fedelho.png" type="image/png">Baixar imagem</a></button>  
+<br>
+
+<!--imagens que se alteram e ajustam com o tamanho da tela-->
+
+<h2>imagem dinamica</h2>
+
+<picture>
+    <source media="(max-width: 500px)" srcset="img/foto-p.png" type="image/png">
+    <source media="(max-width: 750px)" srcset="img/foto-m.png" type="image/png">
+    <source media="(max-width: 1000px)" srcset="img/foto-g.png" type="image/png">
+    <img src="img/foto-g.png" width="100%">
+</picture>
+  
+<h1 class="centro">reproduzindo audio</h1>
+<audio preload="metadata"  controls loop> 
+    <source src="audio/guanacast-33.mp3" type="audio/mpeg">
+</audio>
+<p>pega o play pai</p>
+<audio src="audio/guanacast-33.mp3" controls>pega o play pai</audio>
+</body>
+
+</html>

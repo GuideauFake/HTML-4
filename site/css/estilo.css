@@ -1,0 +1,44 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #020202;
+    margin: 0;
+    padding: 20px;
+}
+
+button {
+    text-align: center;
+    background-color: #ff0c0cc5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    object-position: center;
+}
+button:hover {
+    object-position: center;
+    background-color: #45e05a;
+}
+/* esse id # foi usado no h1 do index*/
+#principal{ 
+    text-align: center;
+    color: rgb(59, 58, 58);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+.centro{
+    text-align: center;
+}
+a{
+    color: gray;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
