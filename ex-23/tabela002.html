@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color:gray;
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px; /* para que o cabeçalho fique fixo no topo da tabela, mesmo quando a tabela for rolada para baixo */;
+            background-color: gray;
+
+        }
+
+        .num{
+            text-align: right;
+        }
+
+        tbody tr:nth-child(2n){
+            background-color: lightgray; /* efeito "zebra striping", para melhorar a legibilidade de tabelas grandes */
+        }
+        caption{
+            font-size: 1.5em;
+            padding: 10px;
+            font-weight: bold;
+            background-color: lightgray;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>uso de tabelas grandes</h1>
+    <!--  
+        ANATOMIA PARA GRANDES TABELAS
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População dos Estados Brasileiros</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 150px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 292 666</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">13 895 103</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 144 597</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 154 834</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+               <th scope="row">Total de Habitantes</th>
+               <td class="num"><strong>alguns</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ratione neque voluptatem culpa, deserunt itaque. Dolores saepe voluptatem accusamus pariatur, minima officia laborum velit nobis modi nemo aliquam rerum aperiam! <br>
+    Sapiente quasi voluptates nemo vero, sed quaerat delectus recusandae cumque, explicabo earum dolor corporis quo ex optio soluta modi aperiam aut veritatis cum saepe quos! Ratione deleniti vel ipsum impedit! <br>
+    Corporis ad quo rem veritatis cupiditate, officia, autem et eveniet ut repellendus eligendi. Eos illum fugiat consequatur voluptate beatae magni rem sequi officiis fugit et voluptatibus, esse quas, velit error.
+    Ipsum doloremque ea, praesentium iure deleniti dolores facere dolorum ipsa, minima inventore quibusdam, rerum nesciunt incidunt alias odio. Quisquam qui sunt debitis incidunt reprehenderit consequatur sint earum fuga at aliquam! <br>
+    Neque, unde. Ab minus temporibus facere, dicta praesentium ipsum cumque suscipit tenetur aliquid dolore odio earum tempora velit commodi quam reiciendis ducimus libero nisi nobis odit veniam inventore! Distinctio, asperiores. <br>
+    Quidem provident impedit, omnis totam officia a reprehenderit quibusdam delectus odio eveniet optio, cum libero excepturi dolorem quia iste eius laudantium sit non fugiat enim sed vel. Ex, iusto odio?<br>
+    Itaque enim omnis fugiat quis expedita aut repellendus ducimus dolore quibusdam corporis recusandae totam, molestias ipsa est neque sit vel facilis adipisci amet porro minima velit provident? Officiis, sed reiciendis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ratione neque voluptatem culpa, deserunt itaque. Dolores saepe voluptatem accusamus pariatur, minima officia laborum velit nobis modi nemo aliquam rerum aperiam! <br>
+    Sapiente quasi voluptates nemo vero, sed quaerat delectus recusandae cumque, explicabo earum dolor corporis quo ex optio soluta modi aperiam aut veritatis cum saepe quos! Ratione deleniti vel ipsum impedit! <br>
+    Corporis ad quo rem veritatis cupiditate, officia, autem et eveniet ut repellendus eligendi. Eos illum fugiat consequatur voluptate beatae magni rem sequi officiis fugit et voluptatibus, esse quas, velit error.
+    Ipsum doloremque ea, praesentium iure deleniti dolores facere dolorum ipsa, minima inventore quibusdam, rerum nesciunt incidunt alias odio. Quisquam qui sunt debitis incidunt reprehenderit consequatur sint earum fuga at aliquam! <br>
+    Neque, unde. Ab minus temporibus facere, dicta praesentium ipsum cumque suscipit tenetur aliquid dolore odio earum tempora velit commodi quam reiciendis ducimus libero nisi nobis odit veniam inventore! Distinctio, asperiores. <br>
+    Quidem provident impedit, omnis totam officia a reprehenderit quibusdam delectus odio eveniet optio, cum libero excepturi dolorem quia iste eius laudantium sit non fugiat enim sed vel. Ex, iusto odio?<br>
+    Itaque enim omnis fugiat quis expedita aut repellendus ducimus dolore quibusdam corporis recusandae totam, molestias ipsa est neque sit vel facilis adipisci amet porro minima velit provident? Officiis, sed reiciendis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ratione neque voluptatem culpa, deserunt itaque. Dolores saepe voluptatem accusamus pariatur, minima officia laborum velit nobis modi nemo aliquam rerum aperiam! <br>
+    Sapiente quasi voluptates nemo vero, sed quaerat delectus recusandae cumque, explicabo earum dolor corporis quo ex optio soluta modi aperiam aut veritatis cum saepe quos! Ratione deleniti vel ipsum impedit! <br>
+    Corporis ad quo rem veritatis cupiditate, officia, autem et eveniet ut repellendus eligendi. Eos illum fugiat consequatur voluptate beatae magni rem sequi officiis fugit et voluptatibus, esse quas, velit error.
+    Ipsum doloremque ea, praesentium iure deleniti dolores facere dolorum ipsa, minima inventore quibusdam, rerum nesciunt incidunt alias odio. Quisquam qui sunt debitis incidunt reprehenderit consequatur sint earum fuga at aliquam! <br>
+    Neque, unde. Ab minus temporibus facere, dicta praesentium ipsum cumque suscipit tenetur aliquid dolore odio earum tempora velit commodi quam reiciendis ducimus libero nisi nobis odit veniam inventore! Distinctio, asperiores. <br>
+    Quidem provident impedit, omnis totam officia a reprehenderit quibusdam delectus odio eveniet optio, cum libero excepturi dolorem quia iste eius laudantium sit non fugiat enim sed vel. Ex, iusto odio?<br>
+    Itaque enim omnis fugiat quis expedita aut repellendus ducimus dolore quibusdam corporis recusandae totam, molestias ipsa est neque sit vel facilis adipisci amet porro minima velit provident? Officiis, sed reiciendis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ratione neque voluptatem culpa, deserunt itaque. Dolores saepe voluptatem accusamus pariatur, minima officia laborum velit nobis modi nemo aliquam rerum aperiam! <br>
+    Sapiente quasi voluptates nemo vero, sed quaerat delectus recusandae cumque, explicabo earum dolor corporis quo ex optio soluta modi aperiam aut veritatis cum saepe quos! Ratione deleniti vel ipsum impedit! <br>
+    Corporis ad quo rem veritatis cupiditate, officia, autem et eveniet ut repellendus eligendi. Eos illum fugiat consequatur voluptate beatae magni rem sequi officiis fugit et voluptatibus, esse quas, velit error.
+    Ipsum doloremque ea, praesentium iure deleniti dolores facere dolorum ipsa, minima inventore quibusdam, rerum nesciunt incidunt alias odio. Quisquam qui sunt debitis incidunt reprehenderit consequatur sint earum fuga at aliquam! <br>
+    Neque, unde. Ab minus temporibus facere, dicta praesentium ipsum cumque suscipit tenetur aliquid dolore odio earum tempora velit commodi quam reiciendis ducimus libero nisi nobis odit veniam inventore! Distinctio, asperiores. <br>
+    Quidem provident impedit, omnis totam officia a reprehenderit quibusdam delectus odio eveniet optio, cum libero excepturi dolorem quia iste eius laudantium sit non fugiat enim sed vel. Ex, iusto odio?<br>
+    Itaque enim omnis fugiat quis expedita aut repellendus ducimus dolore quibusdam corporis recusandae totam, molestias ipsa est neque sit vel facilis adipisci amet porro minima velit provident? Officiis, sed reiciendis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ratione neque voluptatem culpa, deserunt itaque. Dolores saepe voluptatem accusamus pariatur, minima officia laborum velit nobis modi nemo aliquam rerum aperiam! <br>
+    Sapiente quasi voluptates nemo vero, sed quaerat delectus recusandae cumque, explicabo earum dolor corporis quo ex optio soluta modi aperiam aut veritatis cum saepe quos! Ratione deleniti vel ipsum impedit! <br>
+    Corporis ad quo rem veritatis cupiditate, officia, autem et eveniet ut repellendus eligendi. Eos illum fugiat consequatur voluptate beatae magni rem sequi officiis fugit et voluptatibus, esse quas, velit error.
+    Ipsum doloremque ea, praesentium iure deleniti dolores facere dolorum ipsa, minima inventore quibusdam, rerum nesciunt incidunt alias odio. Quisquam qui sunt debitis incidunt reprehenderit consequatur sint earum fuga at aliquam! <br>
+    Neque, unde. Ab minus temporibus facere, dicta praesentium ipsum cumque suscipit tenetur aliquid dolore odio earum tempora velit commodi quam reiciendis ducimus libero nisi nobis odit veniam inventore! Distinctio, asperiores. <br>
+    Quidem provident impedit, omnis totam officia a reprehenderit quibusdam delectus odio eveniet optio, cum libero excepturi dolorem quia iste eius laudantium sit non fugiat enim sed vel. Ex, iusto odio?<br>
+    Itaque enim omnis fugiat quis expedita aut repellendus ducimus dolore quibusdam corporis recusandae totam, molestias ipsa est neque sit vel facilis adipisci amet porro minima velit provident? Officiis, sed reiciendis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ratione neque voluptatem culpa, deserunt itaque. Dolores saepe voluptatem accusamus pariatur, minima officia laborum velit nobis modi nemo aliquam rerum aperiam! <br>
+    Sapiente quasi voluptates nemo vero, sed quaerat delectus recusandae cumque, explicabo earum dolor corporis quo ex optio soluta modi aperiam aut veritatis cum saepe quos! Ratione deleniti vel ipsum impedit! <br>
+    Corporis ad quo rem veritatis cupiditate, officia, autem et eveniet ut repellendus eligendi. Eos illum fugiat consequatur voluptate beatae magni rem sequi officiis fugit et voluptatibus, esse quas, velit error.
+    Ipsum doloremque ea, praesentium iure deleniti dolores facere dolorum ipsa, minima inventore quibusdam, rerum nesciunt incidunt alias odio. Quisquam qui sunt debitis incidunt reprehenderit consequatur sint earum fuga at aliquam! <br>
+    Neque, unde. Ab minus temporibus facere, dicta praesentium ipsum cumque suscipit tenetur aliquid dolore odio earum tempora velit commodi quam reiciendis ducimus libero nisi nobis odit veniam inventore! Distinctio, asperiores. <br>
+    Quidem provident impedit, omnis totam officia a reprehenderit quibusdam delectus odio eveniet optio, cum libero excepturi dolorem quia iste eius laudantium sit non fugiat enim sed vel. Ex, iusto odio?<br>
+    Itaque enim omnis fugiat quis expedita aut repellendus ducimus dolore quibusdam corporis recusandae totam, molestias ipsa est neque sit vel facilis adipisci amet porro minima velit provident? Officiis, sed reiciendis.</p>
+</body>
+</html>
